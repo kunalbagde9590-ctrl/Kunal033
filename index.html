@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kunal Bagade — Portfolio</title>
+  <meta name="description" content="Kunal Bagade — Professional portfolio and resume." />
+  <style>
+    :root{--accent:#0b63d6;--muted:#6b7280;--bg:#f7f8fb;--card:#fff}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg);color:#0f172a}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6dd3ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0;color:var(--muted)}
+    nav a{margin-left:12px;text-decoration:none;color:var(--muted);font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,15,30,0.06)}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#eef4ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600}
+    .project{border-radius:10px;padding:12px;margin-bottom:12px;background:#fbfeff}
+    footer{margin-top:36px;text-align:center;color:var(--muted);font-size:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+    .muted{color:var(--muted)}
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.brand h1{font-size:20px}.avatar{width:64px;height:64px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">KB</div>
+        <div>
+          <h1>Kunal Bagade</h1>
+          <p class="lead">Electrical Engineer • Frontend hobbyist • Portfolio & Resume</p>
+          <p class="muted" style="margin:4px 0 0">Location: India • Email: <a href="mailto:your.email@example.com">your.email@example.com</a> • Phone: +91-XXXXXXXXXX</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section>
+        <div class="card" id="about">
+          <div class="section-title">
+            <h2>About</h2>
+            <a class="btn" href="#contact">Hire / Contact</a>
+          </div>
+          <p>Hello — I'm <strong>Kunal Bagade</strong>. I'm an electrical engineer who works on practical engineering problems and enjoys building small web projects and portfolios. I specialise in circuit analysis, power systems fundamentals, and I am learning modern web development to showcase my projects and resume online.</p>
+
+          <h3 style="margin-top:18px">Resume</h3>
+          <p class="muted">Download a printable copy of my resume (replace with your real resume file).</p>
+          <p><a class="btn" href="#" id="downloadResume">Download Resume (PDF)</a></p>
+
+          <h3 style="margin-top:18px">Summary</h3>
+          <ul>
+            <li>Degree: B.Tech / Diploma in Electrical Engineering (update with your qualification)</li>
+            <li>Experience: Internship / Projects in electrical systems, power distribution, PCB troubleshooting (update details)</li>
+            <li>Interests: Power systems, embedded systems, web portfolios, automation</li>
+          </ul>
+        </div>
+
+        <div class="card" id="projects" style="margin-top:16px">
+          <div class="section-title"><h2>Projects</h2><a href="#projects" class="muted">See all</a></div>
+
+          <div class="project">
+            <h4>Project Title — Power Distribution Study</h4>
+            <p class="muted">Brief description: Performed load flow analysis and efficiency improvements. Tools used: MATLAB / ETAP / Simulink. <strong>Link:</strong> <a href="#">GitHub / Docs</a></p>
+          </div>
+
+          <div class="project">
+            <h4>Project Title — PCB Troubleshooting</h4>
+            <p class="muted">Brief description: Diagnosed and repaired a switching power supply. Skills: soldering, oscilloscope, circuit analysis.</p>
+          </div>
+
+          <div class="project">
+            <h4>Personal Website / Portfolio</h4>
+            <p class="muted">This site (single-file template). Replace content with your real projects, screenshots, and links.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card" id="skills">
+          <div class="section-title"><h3>Skills</h3><a class="muted">Level</a></div>
+          <div class="skills">
+            <span class="chip">Circuit Analysis</span>
+            <span class="chip">Power Systems</span>
+            <span class="chip">PCB Repair</span>
+            <span class="chip">MATLAB</span>
+            <span class="chip">C / Embedded</span>
+            <span class="chip">HTML & CSS</span>
+          </div>
+
+          <h4 style="margin-top:14px">Tools</h4>
+          <ul class="muted">
+            <li>Oscilloscope, Multimeter, Soldering</li>
+            <li>MATLAB / Simulink, LTspice</li>
+            <li>Git, VS Code</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Contact</h3>
+          <p class="muted">Want to collaborate or hire me? Send a message.</p>
+          <form id="contactForm">
+            <label style="display:block;margin-bottom:6px;font-weight:700">Your name</label>
+            <input type="text" id="name" placeholder="Your name" style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6eefc;margin-bottom:8px" />
+            <label style="display:block;margin-bottom:6px;font-weight:700">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6eefc;margin-bottom:8px" />
+            <label style="display:block;margin-bottom:6px;font-weight:700">Message</label>
+            <textarea id="message" rows="4" placeholder="Say hi..." style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6eefc;margin-bottom:8px"></textarea>
+            <button type="submit" class="btn" style="width:100%">Send message</button>
+          </form>
+          <p class="muted" style="font-size:13px;margin-top:8px">Or email me directly at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h4>Quick links</h4>
+          <ul class="muted">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Certificates</a></li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Made with ♥ • Replace this site content with your real details. © <span id="year"></span> Kunal Bagade</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Resume download placeholder (replace href with actual file path)
+    document.getElementById('downloadResume').addEventListener('click', function(e){
+      e.preventDefault();
+      alert('Replace the download link with your resume PDF file.');
+    });
+
+    // Contact form behaviour — replace with your backend or use formspree/netlify if hosting
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value || 'Visitor';
+      alert('Thanks, ' + name + '! This is a demo contact form. Replace the JS to submit to your email or backend.');
+    });
+  </script>
+</body>
+</html>
